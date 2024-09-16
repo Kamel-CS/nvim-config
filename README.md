@@ -20,3 +20,12 @@ The setup follows a YouTube tutorial, which can be found [here](https://youtu.be
 5. Node.js (required for some plugins).
 
 ## 3. Folder Structure
+```
+├── init.lua
+├── lazy-lock.json
+├── lua/
+│   └── kamel/
+│       ├── core/
+│       ├── lazy.lua
+│       └── plugins/
+```

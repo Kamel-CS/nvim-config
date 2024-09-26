@@ -12,7 +12,11 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup("kamel.plugins", {
-  change_detection = {
+    checker = {
+    enabled = true,
     notify = false,
-  },
+    },
+    change_detection = {
+        notify = false,
+    },
 })

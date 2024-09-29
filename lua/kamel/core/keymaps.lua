@@ -30,3 +30,22 @@ keymap.set("n", "<leader>tx", "<cmd>tabclose<CR>", { desc = "Close current tab" 
 keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  go to next tab
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
+
+
+
+
+-- Keymap to switch to Tokyo Night theme
+vim.keymap.set('n', '<leader>ct', function()
+    vim.cmd("colorscheme tokyonight")
+end, { noremap = true, silent = true, desc = "Switch to Tokyo Night theme" })
+
+-- Keymap to switch to Kanagawa theme
+vim.keymap.set('n', '<leader>ck', function()
+    vim.cmd("colorscheme kanagawa-dragon")
+end, { noremap = true, silent = true, desc = "Switch to Kanagawa theme" })
+
+-- Optional: Add keymaps for additional themes as needed
+-- Example for another theme
+-- vim.keymap.set('n', '<leader>c<theme>', function()
+--     vim.cmd("colorscheme <theme>")
+-- end, { noremap = true, silent = true, desc = "Switch to <theme> theme" })

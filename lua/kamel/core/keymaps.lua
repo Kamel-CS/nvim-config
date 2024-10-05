@@ -31,13 +31,10 @@ keymap.set("n", "<leader>tn", "<cmd>tabn<CR>", { desc = "Go to next tab" }) --  
 keymap.set("n", "<leader>tp", "<cmd>tabp<CR>", { desc = "Go to previous tab" }) --  go to previous tab
 keymap.set("n", "<leader>tf", "<cmd>tabnew %<CR>", { desc = "Open current buffer in new tab" }) --  move current buffer to new tab
 
-
-
-
 -- Keymap to switch to Tokyo Night theme
-vim.keymap.set('n', '<leader>ct', function()
-    vim.cmd("colorscheme tokyonight")
-end, { noremap = true, silent = true, desc = "Switch to Tokyo Night theme" })
+vim.keymap.set('n', '<leader>cr', function()
+    vim.cmd("colorscheme rose-pine")
+end, { noremap = true, silent = true, desc = "Switch to Rose Pine theme" })
 
 -- Keymap to switch to Kanagawa theme
 vim.keymap.set('n', '<leader>ck', function()
@@ -49,3 +46,6 @@ end, { noremap = true, silent = true, desc = "Switch to Kanagawa theme" })
 -- vim.keymap.set('n', '<leader>c<theme>', function()
 --     vim.cmd("colorscheme <theme>")
 -- end, { noremap = true, silent = true, desc = "Switch to <theme> theme" })
+
+-- Bind the toggle function 
+vim.api.nvim_set_keymap("n", "<leader>tt", ":lua toggle_transparency()<CR>", { noremap = true, silent = true })

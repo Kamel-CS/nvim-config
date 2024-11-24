@@ -27,6 +27,10 @@ return {
 
         -- set keymaps
         local keymap = vim.keymap -- for conciseness
+        -- Obsidian Vault search with Telescope
+        keymap.set("n", "<leader>fo", function()
+            require("telescope.builtin").find_files({ cwd = "~/Obsidian/my-vault" })
+        end, { desc = "Search Obsidian vault files" })
 
         keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
         keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Fuzzy find recent files" })

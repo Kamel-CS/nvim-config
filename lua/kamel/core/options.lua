@@ -49,3 +49,15 @@ termguicolors = true
 -- Transparency
 -- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
 -- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+
+
+-- Set conceallevel to 2 for Markdown files
+-- Conceallevel determines how certain syntax elements (like links, images, etc.)
+-- are visually "hidden" in the text. This is useful for Obsidian.nvim and Markdown files.
+-- Reference: https://neovim.io/doc/user/options.html#'conceallevel'
+vim.api.nvim_create_autocmd("FileType", {
+    pattern = "markdown",
+    callback = function()
+        vim.opt.conceallevel = 2 -- Use 2 to fully hide syntax elements when not selected
+    end,
+})

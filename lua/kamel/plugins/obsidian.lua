@@ -17,7 +17,7 @@ return {
     daily_notes = {
       folder = "daily",                -- Folder to store daily notes (relative to vault)
       date_format = "%Y-%m-%d",        -- Format for daily note filenames
-      template = "templates/daily.md",
+      template = "/home/kamel/Obsidian/my-vault/templates/daily.md",
     },
   },
   config = function(_, opts)

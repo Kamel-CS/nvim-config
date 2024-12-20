@@ -9,7 +9,7 @@ return {
   opts = {
     dir = "~/Obsidian/my-vault/", -- Main vault directory
     templates = {
-      subdir = "templates", -- Relative path to your templates folder inside the vault
+      subdir = "~/Obsidian/my-vault/templates", -- Relative path to your templates folder inside the vault
     },
     disable_frontmatter = true,  -- Disable automatic front matter
 
@@ -17,7 +17,7 @@ return {
     daily_notes = {
       folder = "daily",                -- Folder to store daily notes (relative to vault)
       date_format = "%Y-%m-%d",        -- Format for daily note filenames
-      template = "/home/kamel/Obsidian/my-vault/templates/daily.md",
+      template = "templates/daily.md",
     },
   },
   config = function(_, opts)
@@ -32,7 +32,7 @@ return {
     keymap.set("n", "<leader>oq", "<cmd>ObsidianQuickSwitch<cr>", { desc = "Quickly switch between notes" })
     keymap.set("n", "<leader>ol", "<cmd>ObsidianFollowLink<cr>", { desc = "Follow the link under the cursor" })
     keymap.set("n", "<leader>os", "<cmd>ObsidianSearch<cr>", { desc = "Search for notes in the vault" })
-    keymap.set("n", "<leader>ot", "<cmd>ObsidianTemplate<cr>", { desc = "Insert a template into current note" })
+    -- keymap.set("n", "<leader>ot", "<cmd>ObsidianTemplate<cr>", { desc = "Insert a template into current note" })
 
     -- Add keybinding for daily notes
     keymap.set("n", "<leader>od", "<cmd>ObsidianToday<cr>", { desc = "Open today's daily note" })

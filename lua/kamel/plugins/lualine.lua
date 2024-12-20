@@ -53,7 +53,7 @@ return {
     lualine.setup({
       options = {
         --theme = my_lualine_theme,
-        theme = "rose-pine",
+        theme = "gruvbox",
       },
       sections = {
         lualine_x = {

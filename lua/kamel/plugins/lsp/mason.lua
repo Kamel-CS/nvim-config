@@ -28,6 +28,7 @@ return {
         'html',
         'pylsp',
         'lua_ls',
+        'jdtls',
       },
     })
   end,

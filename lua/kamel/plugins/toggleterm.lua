@@ -5,7 +5,8 @@ return {
     config = function()
       require("toggleterm").setup{
         size = 18,  -- Size for horizontal or vertical modes (not used in float mode)
-        open_mapping = [[<c-/>]],  -- Keybind to toggle the terminal
+        -- open_mapping = [[<c-/>]],  -- Keybind to toggle the terminal
+        open_mapping = [[<leader>tt]],  -- Keybind to toggle the terminal
         direction = 'horizontal',  -- Set to float for overlay terminal
         start_in_insert = true,  -- Automatically start in insert mode
         shade_terminals = true,  -- Adds shading to make the terminal stand out

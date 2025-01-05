@@ -47,8 +47,8 @@ opt.swapfile = false
 termguicolors = true
 
 -- Transparency
--- vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
--- vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
+vim.api.nvim_set_hl(0, "Normal", { bg = "none" })
+vim.api.nvim_set_hl(0, "NormalFloat", { bg = "none" })
 
 
 -- Set conceallevel to 2 for Markdown files
